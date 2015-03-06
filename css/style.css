@@ -2,6 +2,10 @@ body {
   background: url("../img/background.png");
 }
 
+.top-bar {
+  background: url("../img/background.png");
+}
+
 .title-area {
   font-family: 'Lato', sans-serif, bold!important;
 }
@@ -29,6 +33,8 @@ body {
 .ty-terminal {
   background: url("../img/MacBookPro.png");
   background-size: 100% 100%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .ty-terminal * {
@@ -38,11 +44,28 @@ body {
 .ty-terminal-inner {
   margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 350px;
   overflow: hidden;
   text-overflow: hidden;
+}
+
+.ty-terminal-text {
+  display: none; 
+}
+
+@media (max-width: 600px) {
+  .ty-terminal {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ty-banner {
+    display: none;
+  }
 }
 
 /* .ty-banner-images { */
@@ -98,7 +121,7 @@ body {
 }
 
 .ty-main section {
-  padding-left: 50px; 
+  padding-left: 10px; 
 }
 
 .ty-main section ul {
