@@ -45,8 +45,72 @@ body {
   text-overflow: hidden;
 }
 
-.ty-main {
+/* .ty-banner-images { */
+/*   margin: auto; */
+/*   width: 100%;  */
+/* } */
+/*  */
+/* .ty-banner-images ul { */
+/*   list-style-type: none; */
+/* } */
+/*  */
+/* .ty-banner-images ul li { */
+/*   height: 200px; */
+/* } */
+/*  */
+/* .circle-wrapper-3 { */
+/*   float: left; */
+/*   width: 33%;  */
+/* } */
+/*  */
+/* .circle-wrapper-2 { */
+/*   float: left; */
+/*   width: 50%;  */
+/* } */
+/*  */
+/* .circle-icon { */
+/*   -moz-border-radius: 130px/130px; */
+/*   -webkit-border-radius: 130px 130px; */
+/*   border-radius: 130px/130px;; */
+/*  */
+/*   border:solid 5px #fff; */
+/*   width:130px; */
+/*   height:130px; */
+/*  */
+/*   margin: 0 auto 0 auto; */
+/*   z-index: 9999; */
+/* } */
+/*  */
+/* .circle-icon:hover { */
+/*   transition: 0.3s; */
+/*   box-shadow: 0 0 20px #9ecaed; */
+/*   cursor: pointer; */
+/* } */
+
+.ty-main p, 
+.ty-main h1, 
+.ty-main h2, 
+.ty-main h3, 
+.ty-main h4, 
+.ty-main h5, 
+.ty-main span {
   color: #ffffff!important; 
+}
+
+.ty-main section {
+  padding-left: 50px; 
+}
+
+.ty-main section ul {
+  list-style-type: none;
+}
+
+.ty-main section ul li {
+  padding-left: 10px; 
+}
+
+.ty-main .gpa {
+  float: right; 
 }
 
 footer p {
@@ -74,3 +138,26 @@ footer p {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+blockquote {
+  font: 12px/18px normal "Courier New", sans-serif;
+  padding-left: 70px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #000;
+  color: white;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 5px;
+  background-image: url(images/openquote5.gif);
+  background-position: middle left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+  }
+  blockquote.style5 div {
+    padding-right: 50px;
+    display: block;
+    background-image: url(images/closequote5.gif);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+} 
