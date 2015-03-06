@@ -1,17 +1,103 @@
 <!DOCTYPE HTML>
 
-<html>
+<!-- <html> -->
+<!--   <head> -->
+<!--     <meta http&#45;equiv="Content&#45;Type" content="text/html; charset=UTF&#45;8" /> -->
+<!--     <meta name="author" content="Tianyu Cheng" /> -->
+<!--     <title>Tianyu Cheng | {{ page.title }}</title> -->
+<!--   </head> -->
+<!--   <body> -->
+<!--     <header> -->
+<!--       <h1><a href="/">{{ page.title }}</a></h1> -->
+<!--     </header> -->
+<!--     <section> -->
+<!--       {{ content }} -->
+<!--     </section> -->
+<!--   </body> -->
+<!-- </html> -->
+
+
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
     <meta name="author" content="Tianyu Cheng" />
-    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tianyu Cheng | {{ page.title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
   </head>
+
   <body>
-    <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
-    </header>
-    <section>
-      {{ content }}
-    </section>
+    <!-- navigation top-bar -->
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1>
+            <a href="#">
+              TIANYU CHENG
+            </a>
+          </h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+      </ul>
+      <section class="top-bar-section ty-titlemenu">
+        <ul class="left">
+          <li><a href="#">Homepage</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <ul class="right">
+          <li class="search">
+            <form>
+              <input type="search" placeholder="Type Here...">
+            </form>
+          </li>
+          <li class="has-button">
+            <a class="small button" href="#">Search</a>
+          </li>
+          <li style="height:0px;">&nbsp;</li>
+        </ul>
+      </section>
+    </nav>
+    <!-- navigation top-bar ends -->
+
+    <!-- =============================== -->
+    <div class="row">
+      <div class="large-12 columns">
+        <section>
+          {{ content }}
+        </section>
+      </div>
+    </div>
+    <!-- =============================== -->
+
+    <!-- footer -->
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>Copyright © Tianyu Cheng</p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="inline-list right">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+  $(document).foundation();
+  </script>
   </body>
 </html>
