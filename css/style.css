@@ -1,7 +1,76 @@
+body {
+  background: url("../img/background.png");
+}
+
 .title-area {
   font-family: 'Lato', sans-serif, bold!important;
 }
 
+.title-area h1:hover {
+  
+}
+
 .ty-titlemenu li a {
   font-family: 'Lato', sans-serif, bold!important;
+}
+
+.ty-banner {
+  padding-top: 10px;
+  width: 100%;
+  height: 500px;
+  background: url("../img/banner_background.png");
+}
+
+.ty-carousel {
+  padding: 50px;
+  height: 500px;
+}
+
+.ty-terminal {
+  background: url("../img/MacBookPro.png");
+  background-size: 100% 100%;
+}
+
+.ty-terminal * {
+  color: rgb(0, 255, 0);
+}
+
+.ty-terminal-inner {
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 350px;
+  overflow: hidden;
+  text-overflow: hidden;
+}
+
+.ty-main {
+  color: #ffffff!important; 
+}
+
+footer p {
+ color: #ffffff!important; 
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
