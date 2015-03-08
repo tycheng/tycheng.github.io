@@ -133,6 +133,8 @@ body {
 .ty-main h3, 
 .ty-main h4, 
 .ty-main h5, 
+.ty-main ul,
+.ty-main li,
 .ty-main span {
   color: #ffffff!important; 
 }
