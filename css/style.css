@@ -37,7 +37,9 @@ body {
   padding-right: 100px;
 }
 
-.ty-terminal * {
+.ty-terminal p,
+.ty-terminal h3
+{
   color: rgb(0, 255, 0);
 }
 
@@ -55,6 +57,18 @@ body {
   display: none; 
 }
 
+.ty-post-banner {
+  width: 100%; 
+  height: 200px;
+  overflow: hidden;
+  background: url("../img/banner_background.png");
+}
+
+.ty-post-banner img {
+  width: 100%;
+}
+
+
 @media (max-width: 600px) {
   .ty-terminal {
     padding-left: 50px;
@@ -64,6 +78,9 @@ body {
 
 @media (max-width: 500px) {
   .ty-banner {
+    display: none;
+  }
+  .ty-post-banner {
     display: none;
   }
 }

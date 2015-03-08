@@ -1,10 +1,21 @@
 ---
-layout: layout
+layout: base
 ---
 
-<div class="content">
-  <div id="post">
-    <h1>{{ post.title }}</h1>
-    {{ content }}
+<!-- banner picture -->
+<div class="ty-post-banner">
+  <img src="{{ page.banner }}" />
+</div>
+
+<br><br>
+<!-- banner picture end -->
+
+<!-- =============================== -->
+<div class="row ty-main">
+  <div class="large-12 columns">
+    <section>
+      {{ content }}
+    </section>
   </div>
 </div>
+<!-- =============================== -->
