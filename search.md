@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Search Results
+banner: /img/bannerSearch.jpg
 ---
 
 {% raw %}
