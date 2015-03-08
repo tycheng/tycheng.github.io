@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simple Ray Tracer
-banner: /img/posts/raytracer/artifact-highres.jpg
+banner: /img/posts/raytracer/banner.jpg
 ---
 
 Simple Ray Tracer
