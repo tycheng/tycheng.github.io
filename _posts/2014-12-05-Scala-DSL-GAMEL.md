@@ -2,6 +2,7 @@
 layout: post
 title: GAMEL - Game Script Using Scala DSL
 banner: /img/posts/raytracer/banner.jpg
+tags: ['Scala', 'DSL']
 ---
 
 GAMEL - Game Script Using Scala DSL

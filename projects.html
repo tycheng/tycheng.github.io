@@ -3,6 +3,16 @@ layout: banner
 title: Homepage
 ---
 
+<!-- tags -->
+<ul class="ty-tags">
+  {% for tag in site.tags %}
+  <li>
+    <span id="tag-{{ tag | first }}" class="round button tiny">{{ tag | first }}</span>
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- posts -->
 <div class="content">
   <div class="related">
     <ul>

@@ -2,6 +2,7 @@
 layout: post
 title: Simple Ray Tracer
 banner: /img/posts/raytracer/banner.jpg
+tags: ['Graphics']
 ---
 
 Simple Ray Tracer
