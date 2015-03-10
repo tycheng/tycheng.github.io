@@ -155,6 +155,11 @@ body {
   float: right; 
 }
 
+.ty-post-timestamp {
+  display:inline-block;
+  width: 120px!important;  
+}
+
 footer p {
  color: #ffffff!important; 
 }

@@ -9,7 +9,9 @@ banner: /img/bannerSearch.jpg
   {{#entries}}
     <article>
       <h3>
-        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time>
+        <span class="ty-post-timestamp">
+          {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time>
+        </span>
         <a href="{{url}}">{{title}}</a>
         </small>{{/date}}
       </h3>
@@ -19,7 +21,7 @@ banner: /img/bannerSearch.jpg
 {% endraw %}
 
 <section id="search-results" style="display: none;">
-  <p>Search results</p>
+  <h1>Search results</h1>
   <div class="entries">
   </div>
 </section>
