@@ -135,8 +135,14 @@ body {
 .ty-main h5, 
 .ty-main ul,
 .ty-main li,
+.ty-main pre code,
 .ty-main span {
   color: #ffffff!important; 
+}
+
+.ty-main pre code {
+  border: none;
+  background: none; 
 }
 
 .ty-main section {
@@ -158,6 +164,10 @@ body {
 .ty-post-timestamp {
   display:inline-block;
   width: 120px!important;  
+}
+
+.ty-post-title {
+  display:inline-block;
 }
 
 .ty-tags {
