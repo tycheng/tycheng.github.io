@@ -1,27 +1,25 @@
 ---
-layout: post
+layout: banner
 title: Search Results
 banner: /img/bannerSearch.jpg
 ---
 
 {% raw %}
 <script id="search-results-template" type="text/mustache">
-  {{#entries}}
-    <article>
-      <h3>
-        <span class="ty-post-timestamp">
-          {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time>
-        </span>
-        <a href="{{url}}">{{title}}</a>
-        </small>{{/date}}
-      </h3>
-    </article>
-  {{/entries}}
+{{#entries}}
+  <li>
+    <span class="ty-post-timestamp">{{ pubdate }}</span> 
+    <a class="ty-post-title" href="{{ url }}">{{ title }}</a>
+  </li>
+{{/entries}}
 </script>
 {% endraw %}
 
 <section id="search-results" style="display: none;">
   <h1>Search results</h1>
-  <div class="entries">
-  </div>
+  <div class="related">
+    <ul class="entries">
+
+    </ul>
+  <div>
 </section>

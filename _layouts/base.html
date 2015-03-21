@@ -5,7 +5,7 @@
     <meta name="author" content="Tianyu Cheng" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tianyu Cheng | {{ page.title }}</title>
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/foundation.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/vendor/modernizr.js"></script>
@@ -28,12 +28,12 @@
         <ul class="left">
           <li><a href="/index.html">Homepage</a></li>
           <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/projects.html">Gallery</a></li>
+          <li><a href="/intro.html">About Me</a></li>
         </ul>
         <ul class="right">
           <li class="search">
             <form id="search-form" action="/search.html" method="get">
-              <input type="search" id="search-query" name="q" placeholder="Search" autocomplete="on">
+              <input type="search" id="search-query" name="q" placeholder="Hello World" autocomplete="on">
             </form>
           </li>
           <li class="has-button">
@@ -56,8 +56,8 @@
       <div class="large-12 columns">
         <hr>
         <div class="row">
-          <div class="large-3 columns large-centered">
-            <p>Copyright © Tianyu Cheng</p>
+          <div class="large-12 columns">
+            <p class="text-center">Copyright © Tianyu Cheng, 2015</p>
           </div>
         </div>
       </div>
@@ -69,8 +69,6 @@
   <script src="/js/typed.js"></script>
   <script>
     $(document).foundation();
-  </script>
-  <script>
     $(function(){
         $("#whoami").typed({
           strings: ["whoami<br> I am <strong>Tianyu Cheng</strong> from Zhejiang, China. I am an undergraduate student in the <strong>University of Texas at Austin</strong>. I major in <strong>computer science</strong> and <strong>mathematics</strong>. I am interested in many areas of computer science, and I am currently working on <strong>J2EE/SSH</strong>, <strong>Python/Django</strong> for web applications, <strong>mobile development with Android SDK</strong>,and <strong>OpenGL</strong> for computer graphics. Apart from coding, I also take interest in music and art."],
@@ -78,6 +76,7 @@
         });
     });
   </script>
+
   <script type="text/javascript">
     $(function() {
       $('#search-query').lunrSearch({

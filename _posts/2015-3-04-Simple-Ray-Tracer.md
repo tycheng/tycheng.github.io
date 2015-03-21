@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: banner
 title: Simple Ray Tracer
 banner: /img/posts/raytracer/banner.jpg
 tags: ['Graphics']

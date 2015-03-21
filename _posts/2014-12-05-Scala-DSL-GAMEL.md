@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: banner
 title: GAMEL - Game Script Using Scala DSL
 banner: /img/posts/gamel/banner.jpg
 tags: ['Scala', 'DSL']
