@@ -17,7 +17,7 @@ Furthermore, we refined the terrain rendering with bump mapping using a techniqu
  
 ![CDLOD Terrain](/img/posts/planet-renderer/snapshot6.png)
 
-In addition to terrain, we also implemented the ocean, with referencing from (GPU Gems: Effective Water Simulation from Physical Models)[http://http.developer.nvidia.com/GPUGems/gpugems_ch01.html]. In this project, we hard coded the parameters for waves: we put in total 8 waves, 4 out of which are choppy waves that add details to the ocean. One advance would be to add wave controls integration into UI. The implementation of shadow comes from two-pass rendering. Here is a snapshot for ocean rendering:
+In addition to terrain, we also implemented the ocean, with referencing from [GPU Gems: Effective Water Simulation from Physical Models](http://http.developer.nvidia.com/GPUGems/gpugems_ch01.html). In this project, we hard coded the parameters for waves: we put in total 8 waves, 4 out of which are choppy waves that add details to the ocean. One advance would be to add wave controls integration into UI. The implementation of shadow comes from two-pass rendering. Here is a snapshot for ocean rendering:
 
 ![Ocean](/img/posts/planet-renderer/snapshot5.png)
 
