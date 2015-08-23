@@ -3,7 +3,7 @@ body {
 }
 
 body * {
-  font-family: 'Audiowide', sans-serif!important;
+  font-family: 'Josefin Sans', sans-serif!important;
 }
 
 .top-bar {
@@ -137,6 +137,18 @@ body * {
 .ty-tags li {
   display: inline;
   list-style-type: none;
+}
+
+.ty-edu-logo {
+  background: "white"!important;
+}
+
+.ty-courses {
+  margin-bottom: 10px;
+}
+
+#education .ty-entry {
+  min-height: 150px;
 }
 
 footer p {

@@ -5,7 +5,7 @@
     <meta name="author" content="Tianyu Cheng" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tianyu Cheng | {{ page.title }}</title>
-    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/foundation.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/vendor/modernizr.js"></script>
@@ -26,9 +26,8 @@
       </ul>
       <section class="top-bar-section ty-titlemenu">
         <ul class="left">
-          <li><a href="/index.html">Homepage</a></li>
+          <li><a href="/index.html">Portfolio</a></li>
           <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/intro.html">About Me</a></li>
         </ul>
         <ul class="right">
           <li class="search">
@@ -71,8 +70,14 @@
     $(document).foundation();
     $(function(){
         $("#whoami").typed({
-          strings: ["whoami<br> I am <strong>Tianyu Cheng</strong> from Zhejiang, China. I am an undergraduate student in the <strong>University of Texas at Austin</strong>. I major in <strong>computer science</strong> and <strong>mathematics</strong>. I am interested in many areas of computer science, and I am currently working on <strong>J2EE/SSH</strong>, <strong>Python/Django</strong> for web applications, <strong>mobile development with Android SDK</strong>,and <strong>OpenGL</strong> for computer graphics. Apart from coding, I also take interest in music and art."],
-            typeSpeed: 0
+          strings: [
+            "whoami^1000<br>" +
+            " &emsp;Hello, my name is Tianyu Cheng, a programmar from Zhejiang, China.^1000<br>" +
+            " &emsp;I am currently a student in the University of Texas at Austin, majoring in Computer Science and Mathematics.^1000<br>" + 
+            " &emsp;My interests mainly focus on computer graphics, computer vision, and web development.^1000<br>" + 
+            " &emsp;For more information, please visit my portfolio below, or my project page."
+          ],
+            typeSpeed: 20
         });
     });
   </script>
