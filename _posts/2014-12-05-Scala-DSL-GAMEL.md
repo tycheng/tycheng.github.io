@@ -12,13 +12,8 @@ This is a group project which intends to facilitate simple game developing with 
 
 ![Snake](/img/posts/gamel/snake.png)
 
-Our testing toy project:
-
-![Toy Project](/img/posts/gamel/toygame.png)
-
-
-The language
-============
+The language Constructs
+=======================
 
 Entities
 --------

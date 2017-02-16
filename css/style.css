@@ -131,7 +131,7 @@ body * {
 
 .ty-tags {
   list-style-type: none; 
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .ty-tags li {
@@ -139,8 +139,10 @@ body * {
   list-style-type: none;
 }
 
-.ty-edu-logo {
+.ty-logo img {
   background: "white"!important;
+  padding: 2px;
+  border: 1px solid #fff;
 }
 
 .ty-courses {
