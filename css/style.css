@@ -4,6 +4,7 @@ body {
 
 body * {
   font-family: 'Josefin Sans', sans-serif!important;
+  /* overflow-x: hidden; */
 }
 
 .top-bar {
@@ -11,7 +12,29 @@ body * {
 }
 
 .title-area h1:hover {
-  
+
+}
+
+.ty-tab-container {
+  position: relative;
+  width: 300%;
+  overflow: hidden;
+}
+
+.ty-tab {
+  width: 99vw;
+  float: left;
+  /* opacity: 0; */
+  /* -moz-opacity: 0; */
+  /* transition: opacity 0.25s ease-in-out; */
+  /* -webkit-transition: opacity 0.25s ease-in-out; */
+}
+
+.ty-tab[selected] {
+  /* opacity: 1.0; */
+  /* -moz-opacity: 1.0; */
+  /* transition: opacity 0.25s ease-in-out; */
+  /* -webkit-transition: opacity 0.25s ease-in-out; */
 }
 
 .ty-banner {
@@ -19,6 +42,7 @@ body * {
   width: 100%;
   height: 500px;
   background: url("../img/banner_background.png");
+  overflow-y: hidden;
 }
 
 .ty-carousel {
@@ -50,11 +74,11 @@ body * {
 }
 
 .ty-terminal-text {
-  display: none; 
+  display: none;
 }
 
 .ty-post-banner {
-  width: 100%; 
+  width: 100%;
   max-height: 300px;
   overflow: hidden;
   background: url("../img/banner_background.png");
@@ -83,29 +107,29 @@ body * {
 
 .ty-cid {
   display: inline-block;
-  width: 100px; 
+  width: 100px;
 }
 
-.ty-main p, 
-.ty-main h1, 
-.ty-main h2, 
-.ty-main h3, 
-.ty-main h4, 
-.ty-main h5, 
+.ty-main p,
+.ty-main h1,
+.ty-main h2,
+.ty-main h3,
+.ty-main h4,
+.ty-main h5,
 .ty-main ul,
 .ty-main li,
 .ty-main pre code,
 .ty-main span {
-  color: #ffffff!important; 
+  color: #ffffff!important;
 }
 
 .ty-main pre code {
   border: none;
-  background: none; 
+  background: none;
 }
 
 .ty-main section {
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
 .ty-main section ul {
@@ -113,16 +137,16 @@ body * {
 }
 
 .ty-main section ul li {
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
 .ty-main .gpa {
-  float: right; 
+  float: right;
 }
 
 .ty-post-timestamp {
   display:inline-block;
-  width: 120px!important;  
+  width: 120px!important;
 }
 
 .ty-post-title {
@@ -130,7 +154,7 @@ body * {
 }
 
 .ty-tags {
-  list-style-type: none; 
+  list-style-type: none;
   margin-bottom: 0px;
 }
 
@@ -156,7 +180,7 @@ body * {
 }
 
 footer p {
- color: #ffffff!important; 
+ color: #ffffff!important;
 }
 
 .typed-cursor{

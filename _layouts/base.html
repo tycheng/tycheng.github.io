@@ -26,9 +26,9 @@
       </ul>
       <section class="top-bar-section ty-titlemenu">
         <ul class="left">
-          <li><a href="/index.html">Portfolio</a></li>
-          <li><a href="/courses.html">Courses</a></li>
-          <li><a href="/projects.html">Projects</a></li>
+          <li><a class="ty-nav-menu" href="/index#tab-portfolio">Portfolio</a></li>
+          <li><a class="ty-nav-menu" href="/index#tab-courses">Courses</a></li>
+          <li><a class="ty-nav-menu" href="/index#tab-projects">Projects</a></li>
         </ul>
         <ul class="right">
           <li class="search">
@@ -74,11 +74,11 @@
           strings: [
             "whoami^1000<br>" +
             " &emsp;Hello, my name is Tianyu Cheng, a programmar from Zhejiang, China.^1000<br>" +
-            " &emsp;I am currently a student in the University of Texas at Austin, majoring in Computer Science and Mathematics.^1000<br>" + 
-            " &emsp;My interests mainly focus on computer graphics, computer vision, and web development.^1000<br>" + 
+            " &emsp;I am currently a student in the University of Texas at Austin, majoring in Computer Science and Mathematics.^1000<br>" +
+            " &emsp;My interests mainly focus on computer graphics, computer vision, and web development.^1000<br>" +
             " &emsp;For more information, please visit my portfolio below, or my project page."
           ],
-            typeSpeed: 20
+          typeSpeed: 20
         });
     });
   </script>
@@ -91,7 +91,44 @@
         entries : '.entries',         // selector for search entries containing element (contained within results above)
         template: '#search-results-template'  // selector for Mustache.js template
       });
+
+    var url = document.URL;
+    var target = window.location.hash,
+        target = target.replace('#', '');
+    // delete hash so the page won't scroll to it
+    window.location.hash = "";
+
+      $(".ty-tab").attr("selected", false);
+      $("#tab-portfolio").attr("selected", true);
+      $("#index-tab-container").height($("#tab-portfolio").height());
+      $("#index-tab-container").css("left", "0px");
+
+      var tabMenu = $(".ty-nav-menu");
+      $(tabMenu).click(function(e){
+          var targetID = $(this).attr("href").slice(6);
+          var target = $(targetID);
+          var selected = $(".ty-tab[selected]");
+          if (target != selected) {
+              var container = target.parent();
+              var offset = target.offset().left - selected.offset().left;
+              var moveX = container.offset().left - offset;
+              container.animate({
+                  left: moveX+"px",
+                  height: target.height()+"px"
+              }, 250);
+
+              $(".ty-tab").attr("selected", false);
+              target.attr("selected", true);
+          }
+          e.preventDefault();
     });
+
+    if (url.indexOf("#") >= 0) {
+        var selectedTab = url.substring(url.indexOf("#"));
+        var tabMenu = $(".ty-nav-menu[href='/index" + selectedTab + "']");
+        tabMenu.click();
+    }
+  });
   </script>
   </body>
 </html>
